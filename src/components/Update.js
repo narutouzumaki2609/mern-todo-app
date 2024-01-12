@@ -11,7 +11,7 @@ const Update = (props) => {
     }
     const Submit=async ()=>{
         try{
-        const response=await axios.put(`http://localhost:4000/api/v2/updateTask/${props.update._id}`,Inputs);
+        const response=await axios.put(`http://localhost:4000/api/v2/updateTask/${props.update._id}`, Inputs);
         console.log(response)
         props.display("none");
         }
